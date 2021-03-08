@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  z-index: 100;
+}
+
+.headerWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.headerWrap a:hover {
+  opacity: 0.7;
+}
+
+.headerLogo {
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.headerNav ul {
+  display: flex;
+}
+
+.headerNav a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+#mainVisual {
+  padding-top: 70px;
+  width: 100%;
+  align-items: center;
+}
+
+.catchcopy {
+  width: 100%;
+  height: 320px;
+  background: url(../img/mv.png);
+  background-size: cover;
+  background-position: 50% 42.5%;
+}
+
+.catchcopy h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 180px;
+}
+
+.content {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/* ここから */
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+}
+
+span {
+  color: red;
+}
+
+form {
+  width: 71%;
+  margin: 0 auto;
+}
+
+.contactFormItem {
+  width: 100%;
+  height: 60px;
+}
+
+.contactFormItem:nth-of-type(2),
+.contactFormItem:nth-of-type(3),
+.contactFormItem:nth-of-type(4) {
+  margin-top: 20px;
+}
+
+.contactFormItem:nth-of-type(4) {
+  height: auto;
+}
+
+input {
+  /* box-sizing: border-box; */
+  border: #ccc solid 1px;
+  margin-top: 5px;
+  padding: 5px 0;
+  height: 18px;
+  width: 100%;
+}
+
+textarea {
+  /* box-sizing: border-box; */
+  width: 100%;
+  height: 140px;
+  padding: 5px 0;
+  border: #ccc solid 1px;
+  display: inline-block;
+}
+
+.sbt {
+  text-align: center;
+}
+
+.submit {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  height: 40px;
+  width: 280px;
+  margin-top: 20px;
+}
+/* ここまで */
+
+footer {
+  background-color: #222;
+}
+
+.footerWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.footerLogo {
+  color: white;
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 125px;
+}
+
+.footerNav {
+  margin-right: 125px;
+}
+
+.footerNav ul {
+  display: flex;
+}
+
+.footerNav a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0 10px;
+  transition: 0.2s;
+}
+
+.footerNav a:hover {
+  color: #808080;
+}
+
+.footerNav p {
+  color: white;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 768px) {
+  #hamburger {
+    width: 36px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 150;
+    top: 20px;
+    right: 30px;
+    transition: 0.4s;
+  }
+
+  #hamburger span {
+    position: absolute;
+    left: 2px;
+    display: block;
+    width: 36px;
+    height: 4px;
+    background-color: black;
+    transition: 0.8s;
+  }
+
+  #hamburger span:nth-of-type(1) {
+    top: 0px;
+  }
+
+  #hamburger span:nth-of-type(2) {
+    top: 14px;
+  }
+
+  #hamburger span:nth-of-type(3) {
+    top: 28px;
+  }
+
+  .headerNav {
+    display: none;
+  }
+
+  /* ここから */
+  .catchcopy {
+    background-position: 50% 20%;
+  }
+
+  form {
+    width: 90%;
+  }  
+
+  .sbt input {
+    width: 280px;
+  }
+
+  /* ここまで */
+
+  .contactWrap {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .footerLogo {
+    margin-left: 150px;
+  }
+
+  .footerWrap {
+    text-align: center;
+    height: auto;
+  }
+
+  .footerNav {
+    margin-right: 190px;
+    padding-top: 22.5px;
+    padding-bottom: 22.5px;
+  }
+
+  .footerNav li {
+    margin-top: 12.5px;
+  }
+
+  .footerNav ul {
+    display: block;
+    text-align: center;
+  }
+
+  .footerNav p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* ここから */
+
+
+  /* ここまで */
+
+  #contact {
+    padding: 80px 0;
+  }
+
+  .footerLogo {
+    padding-top: 22.5px;
+    margin-left: 0;
+  }
+
+  .footerWrap {
+    display: block;
+  }
+
+  .footerNav {
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 22.5px;
+  }
+
+  .footerNav li {
+    margin-top: 12.5px;
+  }
+
+}

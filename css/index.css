@@ -1,0 +1,570 @@
+@charset "UTF-8";
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  z-index: 100;
+}
+
+.headerWrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.headerWrap a:hover {
+  opacity: 0.7;
+}
+
+.headerLogo {
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.headerNav ul {
+  display: flex;
+}
+
+.headerNav a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+#mainVisual {
+  padding-top: 70px;
+  width: 100%;
+}
+
+.catchcopy {
+  width: 100%;
+  height: 525px;
+  background: url(../img/mv.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.catchcopy h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 225px;
+}
+
+.catchcopy h2 {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.thinking {
+  background-color: #222;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 90px;
+}
+
+.thinkingWrap {
+  padding: 90px 135px;
+}
+
+.thinkingWrap h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.thinkingWrap p {
+  color: white;
+  line-height: 25px;
+  font-size: 16px;
+}
+
+.serviceTitle {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.serviceWrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.serviceContent {
+  width: 40%;
+  margin: 0 0.75%;
+  margin-bottom: 30px;
+}
+
+.serviceContent img {
+  width: 100%;
+}
+
+.serviceContent h3 {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.serviceContent p {
+  font-size: 16px;
+  color: black;
+  line-height: 25px;
+  padding-bottom: 15px;
+}
+
+#service a,
+.employeeBlogJump,
+#contact a {
+  display: block;
+  text-align: center;
+  background-color: #cd0426;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  width: 300px;
+  line-height: 45px;
+  margin: 0 auto;
+  margin-bottom: 75px;
+  transition: 0.4s;
+}
+
+#service a:hover,
+.employeeBlogJump:hover,
+#contact a:hover {
+  background-color: #dc4e66;
+}
+
+#news {
+  width: 100%;
+  background-color: #222;
+  padding: 70px 0;
+  margin-bottom: 90px;
+}
+
+.newsTop {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-top: 15px;
+}
+
+.newsTitle {
+  color: white;
+  font-size: 28px;
+}
+
+.newsTop a {
+  display: block;
+  text-align: center;
+  background-color: #cd0426;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  width: 160px;
+  line-height: 38px;
+  transition: 0.4s;
+}
+
+.newsTop a:hover {
+  background-color: #990c23;
+}
+
+.newsWrap a {
+  display: block;
+  background-color: white;
+  width: 80%;
+  text-decoration: none;
+  margin: 10px auto;
+  height: 65px;
+}
+
+.newsContent {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.newsWrap a :hover {
+  background-color: #bcbcbc;
+  transition: 0.4s;
+}
+
+.newsContent p,
+.newsContent h3 {
+  color: black;
+  line-height: 100%;
+}
+
+.newsContent p {
+  margin-left: 20px;
+}
+
+.newsContent h3 {
+  margin-left: 15px;
+}
+
+.employeeBlogTitle {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+.employeeBlogWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.employeeContent {
+  width: 25%;
+  margin: 0 10px;
+}
+
+.employeeContent img {
+  width: 100%;
+  margin-bottom: 5px;
+  transition: 0.4s;
+}
+
+.employeeContent img:hover {
+  opacity: 0.75;
+}
+
+.employeeContent p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.employeeContent a {
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  transition: 0.4s;
+  line-height: 30px;
+}
+
+.employeeContent a:hover {
+  opacity: 0.75;
+}
+
+#information {
+  display: flex;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+#information a {
+  display: block;
+  width: 50%;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  line-height: 240px;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.about {
+  background-color: #cd0425;
+}
+
+.about:hover {
+  background-color: #dc4e66;
+}
+
+.recruit {
+  background-color: #222;
+}
+
+.recruit:hover {
+  background-color: #656565;
+}
+
+#contact {
+  width: 100%;
+  height: 220px;
+  background-color: #f5f6f9;
+  text-align: center;
+  padding: 55px 0;
+}
+
+.contactWrap h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.contactWrap p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #222;
+}
+
+.footerWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.footerLogo {
+  color: white;
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 125px;
+}
+
+.footerNav {
+  margin-right: 125px;
+}
+
+.footerNav ul {
+  display: flex;
+}
+
+.footerNav a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0 10px;
+  transition: 0.2s;
+}
+
+.footerNav a:hover {
+  color: #808080;
+}
+
+.footerNav p {
+  color: white;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 768px) {
+  #hamburger {
+    width: 36px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 150;
+    top: 20px;
+    right: 30px;
+    transition: 0.4s;
+  }
+
+  #hamburger span {
+    position: absolute;
+    left: 2px;
+    display: block;
+    width: 36px;
+    height: 4px;
+    background-color: black;
+    transition: 0.8s;
+  }
+
+  #hamburger span:nth-of-type(1) {
+    top: 0px;
+  }
+
+  #hamburger span:nth-of-type(2) {
+    top: 14px;
+  }
+
+  #hamburger span:nth-of-type(3) {
+    top: 28px;
+  }
+
+  .headerNav {
+    display: none;
+  }
+
+  /* ここから */
+
+  .catchcopy {
+    height: 820px;
+  }
+
+  .catchcopy h1 {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 320px;
+    line-height: 80px;
+  }
+
+  .catchcopy h2 {
+    padding-top: 0px;
+    line-height: 20px;
+  }
+
+  .thinking {
+    height: 350px;
+  }
+
+  .thinkingWrap {
+    width: 85%;
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  .serviceContent {
+    width: 85%;
+  }
+
+  .newsTop, 
+  .newsWrap a {
+    width: 85%;
+  }
+
+  .newsWrap a {
+    height: 45px;
+  }
+
+  .newsContent p {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+  .newsContent h3 {
+    font-size: 14px;
+  }
+
+  .employeeBlogWrap {
+    flex-wrap: wrap;
+  }
+
+  .employeeContent {
+    width: 85%;
+  }
+
+  /* ここまで */
+
+  .contactWrap {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .footerLogo {
+    margin-left: 150px;
+  }
+
+  .footerWrap {
+    text-align: center;
+    height: auto;
+  }
+
+  .footerNav {
+    margin-right: 190px;
+    padding-top: 22.5px;
+    padding-bottom: 22.5px;
+  }
+
+  .footerNav li {
+    margin-top: 12.5px;
+  }
+
+  .footerNav ul {
+    display: block;
+    text-align: center;
+  }
+
+  .footerNav p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* ここから */
+
+  .catchcopy {
+    height: 650px;
+  }
+
+  .catchcopy h1 {
+    width: 80%;
+    padding-top: 175px;
+  }
+
+  .catchcopy h2 {
+    line-height: 30px;
+  }
+
+  .thinking {
+    height: 475px;
+  }
+
+  /* ここまで */
+
+  #contact {
+    padding: 80px 0;
+    height: 193px;
+  }
+  
+  .contactWrap {
+    height: 193px;
+  }
+
+  .contactWrap h1 {
+    margin-top: 0;
+  }
+
+  .contactWrap p {
+    line-height: 30px;
+  }
+
+  .contactWrap a {
+    margin-top: auto;
+  }
+
+  .footerLogo {
+    padding-top: 22.5px;
+    margin-left: 0;
+  }
+
+  .footerWrap {
+    display: block;
+  }
+
+  .footerNav {
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 22.5px;
+  }
+
+  .footerNav li {
+    margin-top: 12.5px;
+  }
+
+}
